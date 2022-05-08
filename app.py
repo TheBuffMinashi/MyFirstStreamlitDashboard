@@ -29,19 +29,12 @@ links = []
 for t in playlist_items:
   link = 'https://www.youtube.com/watch?v=' + t["snippet"]["resourceId"]["videoId"] + '&list=' + t["id"] + '&t=0s'
   name = t["snippet"]["title"]
-  print(name)
-  # print(link)
   links.append(link)
 
-import pandas as pd
-# print(links)
+
+
 df = pd.DataFrame (links, columns = ['Individual Video Link'])
 df.index += 1
-# df
 def make_clickable(val):
     return '<a href="{}">{}</a>'.format(val,name)
-
 df.style.format(make_clickable)
-
-
-
