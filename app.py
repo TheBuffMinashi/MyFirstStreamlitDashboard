@@ -4,8 +4,8 @@ import googleapiclient.discovery
 from urllib.parse import parse_qs, urlparse
 
 st.title('A Simple Streamlit Web App')
-url = st.text_input('Enter YouTube playlist URL here:', '')
-
+# url = st.text_input('Enter YouTube playlist URL here:', '')
+url = "https://www.youtube.com/playlist?list=PLui6Eyny-Uzyp5P3Vcuv5qCHQOC8W6grN"
 
 query = parse_qs(urlparse(url).query, keep_blank_values=True)
 playlist_id = query["list"][0]
