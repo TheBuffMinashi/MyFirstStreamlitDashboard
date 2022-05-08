@@ -30,4 +30,4 @@ if len(url) != 0:
   for t in playlist_items:
     link = 'https://www.youtube.com/watch?v=' + t["snippet"]["resourceId"]["videoId"] + '&list=' + t["id"] + '&t=0s'
     name = t["snippet"]["title"]
-    st.write('[name](%s)'% link)
+    st.write(f'{[name]}(%s)'% link)
