@@ -1,1 +1,1 @@
-A very basci and simple web app that I built using Streamlit :)
+A very basic and simple web app that I built using Streamlit :)
