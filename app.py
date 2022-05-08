@@ -4,7 +4,7 @@ import googleapiclient.discovery
 from urllib.parse import parse_qs, urlparse
 
 st.set_page_config(layout="wide")
-st.title('A wb app that can help you get individual videos links of a YouTube playlist')
+st.title('A web app that can help you get individual videos links of a YouTube playlist')
 url = st.text_input('Enter YouTube playlist URL here:', '')
 
 
@@ -31,4 +31,4 @@ if len(url) != 0:
   for t in playlist_items:
     link = 'https://www.youtube.com/watch?v=' + t["snippet"]["resourceId"]["videoId"] + '&list=' + t["id"] + '&t=0s'
     name = t["snippet"]["title"]
-    st.write(f'{[name]}(%s)' % link)
+    st.write(f{[name]}(%s) % link)
