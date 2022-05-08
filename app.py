@@ -3,7 +3,7 @@ import pandas as pd
 import googleapiclient.discovery
 from urllib.parse import parse_qs, urlparse
 
-st.title('A Simple Streamlit Web App')
+st.title('A wb app that can help you get individual video link of a YouTube playlist')
 url = st.text_input('Enter YouTube playlist URL here:', '')
 
 
