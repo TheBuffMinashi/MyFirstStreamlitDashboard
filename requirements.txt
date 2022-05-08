@@ -1,4 +1,4 @@
 streamlit
 pandas
-googleapiclient
+--upgrade google-api-python-client
 urllib
